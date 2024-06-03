@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif,sans-serif;
+}
+/* Varibles */
+:root{
+    --header-color:#e6e6e6;
+    --header-bcg-color:#89926d;
+    --padding:20px;
+    --none:none;
+}
+
+body{
+    background-color: #d2c4c4;
+    width: 100vw;
+}
+header{
+background-color:rgb(116, 151, 151) ;
+/* 
+way to use the variable as to store some value and 
+can be used using the var functions
+*/
+color:var(--header-color);
+padding:var(--padding);
+text-align: center;
+}
+header h1{
+    font-size: 34px;
+}
+main{
+    /* 
+    this is used to set the value of the height minimum to be 
+    so that the footer goes down
+    and main has minimum height of 88 view port height
+    */
+    min-height: 83vh;
+    padding: 20px;
+    /* maximum width to be 80vw */
+    max-width: 80vw;
+    /* margin to be 0 from top-bottom and center in between left - right */
+    margin: 0 auto;
+}
+ main form{
+    display: flex;
+    justify-content: center;
+}
+form input[type="text"]{
+    /* this is a selector to select a
+     input whose type attribute is text and inside a form */
+    flex-grow: 1;
+    /*  */
+        border: var(--none);
+        /* varible can also be used to store 'none' keyword  */
+        outline: none;
+        font-size: 25px;
+        text-transform: capitalize;
+        border-radius: 9px;
+        padding: calc(20px/2);
+
+        box-shadow: 
+        inset 0 -3em 3em rgba(119, 175, 119, 0.3),
+        /* 0 0 0 2px white, */
+        0.3em 0.3em 1em rgba(4, 3, 3, 0.6);
+        /* calc funtions are used to perform mathematical operations */
+        
+    }
+    form button[type="submit"], .result a{
+        background-color: rgb(110, 108, 139);
+        border: none;
+        border-radius: 4px;
+        padding: 8px;
+        font-size: 38px;
+        max-height: 81px;
+        /*
+        it was taken from Mdn 
+        to provide shadow behind 
+        it provides multiple thing like shadow backgound color etc
+        */
+        box-shadow: 
+        inset 0 -3em 3em rgba(106, 135, 106, 0.3),
+        /* 0 0 0 2px white, */
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
+        cursor: pointer;
+        color: aliceblue;
+        font-weight: 700;
+        margin-left: 9px;
+
+}
+footer{
+    background-color:rgb(116, 151, 151) ;
+/* 
+way to use the variable as to store some value and 
+can be used using the var functions
+*/
+color:var(--header-color);
+padding:var(--padding);
+text-align: center;
+width: 100vw;
+}
+
+/* style the area added by the javascript during the run time  */
+.result{
+    display: none;
+    margin-top: 23px;
+    background-color: rgb(204, 199, 199);
+    padding: 5px;
+    padding-left: 15px;
+    font-size: 21px;
+    box-shadow:   inset 0 -3em 3em rgba(106, 135, 106, 0.3),
+    /* 0 0 0 2px white, */
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
+    max-width: 70vw;
+}
+.result  p{
+    padding: 5px;
+}
+.makebolder{
+    font-size: 20px;
+    font-size: 30px;
+    font-weight: 800;
+}
+.result div{
+    display: flex;
+    margin: 3px 0px;
+    /* height: 50px; */
+    align-items: center;
+    /* background-color: #89926d; */
+    /* background-color: black; */  
+}
+.result a{
+    background-color:transparent;
+    box-shadow: none;
+    font-size: 30px;
+}
+.readmore{
+    /* color: rgb(255, 255, 255); */
+    text-decoration: none;
+    font-size: 20px;
+}
+audio::-webkit-media-controls-panel{
+    background-color: rgb(204, 199, 199);
+    box-shadow:   inset 0 -3em 3em rgba(106, 135, 106, 0.3),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
+}
+audio::-webkit-media-controls-play-button{
+    background-color: lightblue;
+    border-radius: 50%;
+    /* width: 50px; */
+}
+.list{
+    list-style: square;
+ }
+ strong{
+    font-size: 30px;
+ }
